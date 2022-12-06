@@ -1,1 +1,332 @@
-asad
+STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!
+STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!STRINGS!!!
+
+frase = 'Curso em Vídeo Python'
+
+print(frase[9])
+# = V
+print(frase[9:21])
+'''vai do 9 até o antecessor do último número'''
+# = 'Vídeo Python'
+print(frase[9:21:2])
+'''vai do 9 até o antecessor do último número, pulando de 2 a cada 2 caracteres'''
+# = 'VdoPto'
+print(frase[:5])
+'''vai do começo até o antecessor do último número'''
+# = 'Curso'
+print(frase[15:])
+'''vai do 15 até o final'''
+# = 'Python'
+print(frase[9::3])
+'''vai do 9 até o final, pulando de 3 a cada 3 carateres'''
+# = 'VePh'
+
+
+print(len(frase))
+'''Mostra quantos caracteres possuem em 'frase' '''
+# = 21
+print(frase.count('o'))
+'''Conta quantos 'o' possuem em 'frase' '''
+# = 3
+print(frase.count('o', 0, 13))
+'''Conta quantos 'o' possuem entre os caracteres na posição 0 até o antecessor de 13'''
+# = 1
+print(frase.find('deo'))
+'''Procura em que posição está 'deo' '''
+# = 11
+print(frase.replace('Python', 'Android'))
+'''Substitui a palavra 'Python' por 'Android' '''
+# = Curso em Vídeo Android
+print(frase.upper())
+'''Coloca todas as letras em maiúculas'''
+# = CURSO EM VÍDEO PYTHON
+print(frase.lower())
+'''Coloca todas as letras em minúsculas'''
+# = curso em vídeo python
+print(frase.capitalize())
+'''Coloca apenas a primeira letra da string em maiúscula'''
+# = Curso em vídeo python
+print(frase.title())
+'''Coloca todas as primeiras letras das palavras em maiúsculas'''
+# = Curso Em Vídeo Python
+
+print(frase.split())
+'''Cria strings em cada uma das palavras'''
+print('-'.join(frase))
+
+
+frase2 = '   Curso em Vídeo Python  '
+print(frase2.strip())
+'''Remove espaços inúteis no começo e no final'''
+# = Curso em Vídeo Python
+print(frase2.lstrip())
+'''Remove espaços inúteis no começo'''
+# = Curso em Vídeo Python
+print(frase2.rstrip())
+'''Remove espaços inúteis no final'''
+# =    Curso em Vídeo Python
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!
+REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!REPETIÇÃO!!!
+
+
+# 1
+for c in range(0, 6):
+    print('Oi')
+print('Fim')
+print('-'*20)
+
+# 2
+for c in range(1, 6):
+    print(c)
+print('Fim')
+print('-'*20)
+
+# 3
+for c in range(1, 7):
+    print(c)
+print('Fim')
+print('-'*20)
+
+# 4
+for c in range(6, 0, -1):
+    print(c)
+print('Fim')
+print('-'*20)
+
+# 5
+for c in range(0, 7 ,2):
+    print(c)
+print('Fim')
+print('-'*20)
+
+# 6
+n = int(input('Digite um número:'))
+for c in range(0, n+1):
+    print(c)
+print('Fim')
+
+# 7
+i = int(input('Início:'))
+f = int(input('Fim:'))
+p = int(input('Passo:'))
+for c in range(i, f+1, p):
+    print(c)
+print('Fim')
+
+# 8
+for c in range(0, 3):
+    n = int(input('Digite um valor:'))
+print('Fim')
+
+# 9
+s = 0
+for c in range(0, 3):
+    x = int(input('Digite um valor:'))
+    s = s + x
+print('A soma de todos os valores foi {}'.format(s))
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!
+LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!LISTAS!!!
+
+
+lanche = ['hamburguer', 'coquinha', 'pizza', 'pudim']
+
+# 1
+var = lanche[3]
+'''Mostra o item 3 da lista.'''
+# = pudim
+
+# 2
+lanche[3] = 'picolé'
+'''Substitui o item na posição por outro item definido'''
+# = ['hamburguer', 'coquinha', 'pizza', 'picolé']
+
+# 3
+len(lanche)
+'''Mostra quantos elementos a lista possui.'''
+# = 4
+
+# ------------------------------Adicionando-Elementos------------------------------#
+
+# 1
+lanche.append('cookie')
+'''Adiciona o item no FINAL da lista.'''
+# = ['hamburguer', 'coquinha', 'pizza', 'pudim', 'cookie']
+
+# 2
+lanche.insert(0, 'sorvete')
+'''Adiciona uma posição e insere o item na posição.'''
+# = ['sorvete','hamburguer', 'coquinha', 'pizza', 'pudim']
+
+# -------------------------------Removendo Elementos-------------------------------#
+
+# 1
+del lanche[3]
+# ou
+lanche.pop(3)
+# ou
+lanche.remove('pudim')
+'''Deleta o item na posição selecionada.'''
+# = ['hamburguer', 'coquinha', 'pizza']
+
+# 2
+lanche.pop()
+'''Remove o último item da lista.'''
+# = ['hamburguer', 'coquinha', 'pizza']
+
+# -------------------------Criando Listas a Partir de Range-------------------------#
+
+# 1
+valores = list(range(4, 11))
+'''Cria uma lista com os valores determinados em range.'''
+# = [4, 5, 6, 7, 8, 9, 10]
+
+valores1 = [8, 2, 5, 4, 9, 3, 0]
+
+# 2
+valores1.sort()
+'''Ordena todos os valores dentro da lista.'''
+# = [0, 2, 3, 4, 5, 8, 9]
+
+# 3
+valores1.sort(reverse=True)
+'''Ordena os valores na ordem reversa.'''
+# = [9, 8, 5, 4, 3, 2, 0]
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!
+DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!DICIONÁRIOS!!!
+
+
+"""LISTA"""
+dadosl = list()
+dadosl.append('Pedro')
+dadosl.append(25)
+print(dadosl[0])
+print(dadosl[1])
+
+print('-=-' * 20)
+
+'''DICIONÁRIO'''
+dados = {'nome': 'Pedro', 'idade': 25}
+print(dados['nome'])
+print(dados['idade'])
+dados['sexo'] = 'M'
+print(dados['sexo'])
+
+print('-=-' * 20)
+
+'''MÉTODOS INTERNOS'''
+filme = {'titulo': 'Star Wars',
+         'ano': 1997,
+         'diretor': 'George Lucas'
+         }
+filme.values()
+filme.keys()
+filme.items()
+for k, v, in filme.items():
+    print(f'O {k} é {v}')
+
+print('-=-' * 20)
+
+pessoas = {'nome': 'Gustavo', 'sexo': 'M', 'idade': 22}
+pessoas['nome'] = 'Leandro'
+for k, v in pessoas.items():
+    print(f'{k} = {v}')
+
+print('-=-' * 20)
+
+estado = dict()
+brasil = list()
+for c in range(0, 3):
+    estado['uf'] = str(input('Unidade Federativa: '))
+    estado['sigla'] = str(input('Sigla do Estado: '))
+    brasil.append(estado.copy())
+for c in brasil:
+    for k, v in c.items():
+        print(f'A {k} tem valor {v}')
+        
+        
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!
+MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!MATRIZES!!!
+
+
+notas = [[5.0, 4.5, 7.0, 5.2, 6.1], [2.1, 6.5, 8.0, 7.0, 6.7], [8.6, 7.0, 9.1, 8.7, 9.3]]
+#calcula a média
+media = 0
+#for para percorrer as linhas
+for i in range(3):
+    #for para percorrer as colunas
+    for j in range(5):
+        media = media + notas[i][j]
+media = media / 15
+print(media)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Preencher a matriz por leitura
+
+notas = []
+for i in range(3):
+    # cria linha vazia
+    linha = []
+    for j in range(5):
+        #vai adicionando as notas na linha
+        linha.append(eval(input('Digite a nota [' + str(i) + ',' + str(j) + ']:')))
+    #adiciona a linha na matriz turma
+    notas.append(linha)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+Contar pares
+ 
+matriz = []
+for i in range(3):
+    linha = []
+    for j in range(3):
+        linha.append(eval(input('Digite o valor de [' + str(i) + ',' + str(j) + ']:')))
+    matriz.append(linha)
+#contar pares
+pares = 0
+for i in range(3):
+    for j in range(3):
+        if matriz[i][j] % 2 == 0:
+            pares += 1
+#imprimir em formato de matriz
+for i in range(3):
+    print(matriz[i])
+#imprimir qtde de números pares
+print('A matriz contém', pares, 'números pares')
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Encontrar a pessoa mais nova
+
+m = []
+#preenche a matriz
+for i in range(10):
+    linha = []
+    linha.append(input('Digite o nome da pessoa ' + str(i) + ':'))
+    linha.append(eval(input('Digite a idade de ' + linha[0] + ':')))
+    m.append(linha)
+#procura a pessoa mais nova
+menor = m[0][1]
+pos = 0
+for i in range(10):
+    if m[i][1] < menor:
+        menor = m[i][1]
+        pos = i
+#imprime a matriz
+for i in range(10):
+    print(m[i])
+print('A pessoa mais nova é', m[pos][0])
+ 
