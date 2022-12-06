@@ -330,3 +330,47 @@ for i in range(10):
     print(m[i])
 print('A pessoa mais nova é', m[pos][0])
  
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!
+FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!FUNÇÕES!!!
+
+def calcula_media(v):
+    soma = 0
+    for i in range(len(v)):
+        soma = soma + v[i]
+    media = soma/len(v)
+    return media
+    
+a = [1, 2, 3, 4, 5]
+print(calcula_media(a))
+b = [10, 20, 30, 40]
+print(calcula_media(b))
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Ex6: Média ponderada de dois n ́umeros com os respectivos pesos.
+def op1(nota1, peso1, nota2, peso2):
+        return float(((nota1 * peso1)+(nota2 * peso2))/2)
+
+# Ex7: Defina uma função que calcule o erro entre o valor da soma de uma PG infinita a partir de 1.0 e a soma dos n primeiros termos dessa PG.
+def erro(a1,q,n):
+        return float((1/(1 - q)) - a1*(1-q**n)/(1-q))
+
+# Ex10: Defina uma fun ̧c ̃ao que calcule o saldo final de uma conta, dado o saldo inicial, o n ́umero de meses e a taxa de juros mensal (juros simples).
+def SaldoFinal(saldo_inicial, juros, meses):
+        return (saldo_inicial * (1 + juros * meses))
+
+# Ex11: Defina uma função que calcule a distância que a correnteza arrasta um barco que atravessa um rio.
+def distancia(correnteza, largura, vel_barco):
+        return(correnteza*(largura/vel_barco))
+
+# Ex1.b: Faça uma função que calcule e retorne a média de três números inteiros.
+def media3n(a,b,c):
+        return float((a+b+c)/3)
+
+# Ex1.c: Faça uma função que retorne, dados três números, a diferença do maior deles com a média.
+def diferença(a,b,c):
+        max(a,b,c)
+        media = ((a + b + c) / 3)
+        return float(max - media)
